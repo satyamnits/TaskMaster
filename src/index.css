@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  min-width: 370px;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  position: fixed;
+}
+.Header {
+  color: aliceblue;
+  background-color: blueviolet;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.Main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 2.4rem;
+  overflow-y: scroll;
+  background-color: rgb(199, 162, 255);
+  overflow-y: scroll;
+}
+.Footer {
+  color: aliceblue;
+  background-color: blueviolet;
+  width: 100%;
+  padding: 0.2em 0;
+  text-align: center;
+}
+ul {
+  width: 100%;
+  max-width: 36rem;
+  list-style: none;
+}
+.list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  background-color: rgb(249, 238, 254);
+  margin-top: 0.8em;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.8rem;
+}
+.list input[type="checkbox"] {
+  min-height: 1.8em;
+  min-width: 1.8em;
+  cursor: pointer;
+}
+.list svg {
+  min-height: 1.4em;
+  min-width: 1.4em;
+  color: rgb(150, 90, 207);
+  cursor: pointer;
+  margin-left: auto;
+  outline: none;
+}
+.list svg:hover,
+.list svg:active {
+  color: rgb(255, 0, 0);
+}
+
+.add-item {
+  display: flex;
+  width: 100%;
+  max-width: 36rem;
+  /* padding: 0rem 1rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+#addItem {
+  font-size: 1.5rem;
+  background-color: rgb(249, 238, 254);
+  width: 100%;
+  margin: 0.2rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+}
+#button {
+  display: grid;
+  place-items: center;
+  background-color: rgb(158, 49, 237);
+  color: rgb(249, 238, 254);
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  aspect-ratio: 1;
+  font-size: 2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-item {
+  width: 100%;
+  max-width: 36rem;
+  padding: 0.5rem;
+  background-color: rgba(159, 49, 237, 0.735);
+  border-radius: 30px;
+  margin: 1rem;
+}
+#searchItem {
+  width: 100%;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: none;
+}
