@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "taskmaster",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
